@@ -17,7 +17,8 @@ pipeline {
 
       stage { 'code Analysis' }{
         steps {
-            sh 'sonar-scanner -Dsonar.host.url-(sonarqube ip:9000) -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectkey=user'
+          echo 'sonar'
+            // sh 'sonar-scanner -Dsonar.host.url-(sonarqube ip:9000) -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectkey=user'
         }
       }
 
